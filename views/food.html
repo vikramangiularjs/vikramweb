@@ -1,0 +1,8 @@
+<br/>
+        <input type="text" ng-model="search" placeholder="search from here"/>
+        <br/>
+<div ng-controller="foodController">
+    <ul>
+        <li ng-repeat ="food in foods |orderBy:'name' |filter:search"><b>{{food.name}} :-</b><br/> {{food.desc}}</li>
+    </ul>
+</div> 

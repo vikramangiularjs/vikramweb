@@ -1,0 +1,8 @@
+<br/>
+        <input type="text" ng-model="search" placeholder="search from here"/>
+        <br/>
+<div ng-controller="tvshowController">
+    <ul>
+        <li ng-repeat ="tvshowes in tvshow |orderBy:'name' |filter:search"><b>{{tvshowes.name}}  :- </b> <br/> {{tvshowes.desc}}</li>
+    </ul>
+</div>

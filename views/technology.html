@@ -1,0 +1,8 @@
+<br/>
+        <input type="text" ng-model="search" placeholder="search from here"/>
+        <br/>
+<div ng-controller="technologyController">
+    <ul>
+        <li ng-repeat ="technologies in technology |orderBy:'name' |filter:search"><b>{{technologies.name}} :-</b><br/> {{technologies.desc}}</li>
+    </ul>
+</div>
